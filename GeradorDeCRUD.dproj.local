@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/09/09 09:10:25.988,=C:\Users\IQ SISTEMAS\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/09 09:11:24.235,C:\givanildo\GeradorCRUD\GeradorCrud.dfm=C:\Users\IQ SISTEMAS\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/09/09 09:11:24.235,C:\givanildo\GeradorCRUD\GeradorCrud.pas=C:\Users\IQ SISTEMAS\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/09 09:15:57.842,C:\givanildo\GeradorCRUD\GeradorDeCRUD.dproj=C:\Users\IQ SISTEMAS\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
