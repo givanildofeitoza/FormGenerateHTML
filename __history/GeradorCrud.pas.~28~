@@ -73,18 +73,15 @@ begin
    if(CboTipo.Text = 'TEXT')then
    begin
       MemoForm.Lines.Add('');
-      MemoForm.Lines.Add('<label for="formGroupExampleInput" class="control-label col-md-3 col-sm-3 col-xs-12">'+CboField.Text+'</label>');
-     MemoForm.Lines.Add('<div class="col-md-9 col-sm-9 col-xs-12">');
+      MemoForm.Lines.Add('<label for="formGroupExampleInput" class="form-label">'+CboField.Text+'</label>');
       MemoForm.Lines.Add('<InputText class="form-control" @bind-Value="'+txtClassName.Text+'.'+CboField.Text+'"></InputText>');
       MemoForm.Lines.Add('<ValidationMessage For="@(()=>'+txtClassName.Text+'.'+CboField.Text+')" />');
-      MemoForm.Lines.Add('</div>');
 
    end;
    if(CboTipo.Text = 'SELECT')then
    begin
       MemoForm.Lines.Add('');
-      MemoForm.Lines.Add('<label for="formGroupExampleInput" class="control-label col-md-3 col-sm-3 col-xs-12">'+CboField.Text+'</label>');
-     MemoForm.Lines.Add('<div class="col-md-9 col-sm-9 col-xs-12">');
+      MemoForm.Lines.Add('<label for="formGroupExampleInput" class="form-label">'+CboField.Text+'</label>');
       MemoForm.Lines.Add('<InputSelect class="form-control" @bind-Value="'+txtClassName.Text+'.'+CboField.Text+'">');
       MemoForm.Lines.Add('<option value=""></option>');
         i := 0;
@@ -95,7 +92,6 @@ begin
         end;
         MemoForm.Lines.Add('</InputSelect>');
         MemoForm.Lines.Add('<ValidationMessage For="@(()=>'+txtClassName.Text+'.'+CboField.Text+')" />');
-        MemoForm.Lines.Add('</div>');
    end;
 
    if(CboTipo.Text = 'CHECK')then
@@ -108,21 +104,17 @@ begin
    if(CboTipo.Text = 'NUMBER')then
    begin
       MemoForm.Lines.Add('');
-      MemoForm.Lines.Add('<label for="formGroupExampleInput" class="control-label col-md-3 col-sm-3 col-xs-12">'+CboField.Text+'</label>');
-      MemoForm.Lines.Add('<div class="col-md-9 col-sm-9 col-xs-12">');
+      MemoForm.Lines.Add('<label for="formGroupExampleInput" class="form-label">'+CboField.Text+'</label>');
       MemoForm.Lines.Add('<InputNumber class="form-control" @bind-Value="'+txtClassName.Text+'.'+CboField.Text+'"></InputNumber>');
       MemoForm.Lines.Add('<ValidationMessage For="@(()=>'+txtClassName.Text+'.'+CboField.Text+')" />');
-      MemoForm.Lines.Add('</div>');
    end;
 
    if(CboTipo.Text = 'DATE')then
    begin
       MemoForm.Lines.Add('');
-      MemoForm.Lines.Add('<label for="formGroupExampleInput" class="control-label col-md-3 col-sm-3 col-xs-12">'+CboField.Text+'</label>');
-     MemoForm.Lines.Add('<div class="col-md-9 col-sm-9 col-xs-12">');
+      MemoForm.Lines.Add('<label for="formGroupExampleInput" class="form-label">'+CboField.Text+'</label>');
       MemoForm.Lines.Add('<InputDate class="form-control" @bind-Value="'+txtClassName.Text+'.'+CboField.Text+'"></InputDate>');
       MemoForm.Lines.Add('<ValidationMessage For="@(()=>'+txtClassName.Text+'.'+CboField.Text+')" />');
-      MemoForm.Lines.Add('</div>');
    end;
 
    if(CboTipo.Text = 'RADIO')then
@@ -133,7 +125,7 @@ begin
         begin
           MemoForm.Lines.Add('<input type="radio"');
           MemoForm.Lines.Add('name="Gender" @bind-Value="'+txtClassName.Text+'.'+CboField.Text+'" /> ');
-          MemoForm.Lines.Add('<label for="formGroupExampleInput" class="control-label col-md-3 col-sm-3 col-xs-12">'+memoItensChild.Lines[i]+'</label>');
+          MemoForm.Lines.Add('<label for="formGroupExampleInput" class="form-label">'+memoItensChild.Lines[i]+'</label>');
           inc(i);
         end;
    end;
